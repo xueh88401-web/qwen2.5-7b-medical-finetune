@@ -1,0 +1,25 @@
+# 核心模型推理依赖（必须）
+torch>=2.5.1
+transformers>=4.57.1
+peft>=0.17.1
+accelerate>=1.11.0
+safetensors>=0.5.3
+
+# 分词与工具包
+tokenizers>=0.22.1
+tiktoken>=0.12.0
+sentencepiece>=0.2.1
+
+# 用于可能的量化加载（可选但推荐）
+bitsandbytes>=0.48.2
+
+# 用于扩展Web界面（可选）
+gradio>=5.45.0
+
+# 用于数据加载（如果你的脚本涉及数据集）
+datasets>=4.0.0
+
+# 基础工具包
+numpy>=1.26.4
+protobuf>=6.33.1
+typing_extensions>=4.15.0
