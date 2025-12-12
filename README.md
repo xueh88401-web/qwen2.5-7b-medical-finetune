@@ -56,18 +56,5 @@ outputs = model.generate(**inputs, max_new_tokens=200)
 print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 
 ---
-## 📁 本GitHub仓库文件说明
 
-此仓库作为HuggingFace模型页面的补充，提供完整的项目文件以便复现和研究：
-```
-.
-├── README.md                 # 本说明文件
-├── inference_demo.py         # 简易推理脚本
-├── adapter/                  # LoRA适配器权重与相关文件
-│   ├── adapter_config.json
-│   ├── adapter_model.safetensors
-│   └── ...
-└── training/                 # 训练配置文件
-    └── your_training_config.yaml
-```
 要使用模型，建议直接访问 [HuggingFace模型页面](https://huggingface.co/xueh88401/qwen2.5-7b-medical)。
