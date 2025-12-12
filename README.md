@@ -5,7 +5,7 @@
 
 > 此GitHub仓库包含了模型的LoRA适配器文件、训练配置及使用示例。模型主要托管在HuggingFace。
 
----
+```yaml
 language:
   - zh
 license: mit
