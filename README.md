@@ -1,11 +1,4 @@
-# Qwen2.5-7B 医学助手 (LoRA微调版) - 项目仓库
-
-[![GitHub](https://img.shields.io/github/license/xueh88401-web/qwen2.5-7b-medical-finetune)](LICENSE)
-[![Hugging Face](https://img.shields.io/badge/🤗-Model%20on%20HF-yellow)](https://huggingface.co/xueh88401/qwen2.5-7b-medical)
-
-> 此GitHub仓库包含了模型的LoRA适配器文件、训练配置及使用示例。模型主要托管在HuggingFace。
-
-```yaml
+---
 language:
   - zh
 license: mit
@@ -54,6 +47,7 @@ tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-7B-Instruct")
 inputs = tokenizer("用户：感冒了怎么办？\n助手：", return_tensors="pt").to(model.device)
 outputs = model.generate(**inputs, max_new_tokens=200)
 print(tokenizer.decode(outputs[0], skip_special_tokens=True))
+```
 
 ---
 
